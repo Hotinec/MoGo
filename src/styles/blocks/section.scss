@@ -1,0 +1,85 @@
+.section {
+  padding-top: 90px;
+  padding-bottom: 110px;
+
+  &--devices {
+    padding-bottom: 0;
+    margin-bottom: 40px;
+    background: url('./images/devices-bg.jpg') center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  &--gray {
+    background-color: $commets-background-color;
+  }
+
+  &--clients {
+    background: url('./images/clients-bg.jpg') center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  &--map {
+    padding: 40px 0;
+    background: url('./images/open-map.jpg') center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  @include tablets {
+    padding: 40px 0;
+
+    &--devices {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.section__header {
+  margin: 0 auto 0;
+
+  text-align: center;
+
+  width: 100%;
+  max-width: 954px;
+}
+
+.section__suptitle {
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  font-weight: 400;
+
+  @include phones {
+    font-size: 20px;
+  }
+}
+
+.section__title {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+
+  &:after {
+    content: "";
+    display:block;
+    width: 60px;
+    height: 3px;
+    margin: 40px auto 47px;
+    
+    background-color: $pseudo-element-color;
+
+    @include phones {
+      margin: 20px auto;
+    }
+  }
+
+  @include phones {
+    font-size: 24px;
+  }
+}
+
+.section__text {
+  color: $sextion-color-text;
+}

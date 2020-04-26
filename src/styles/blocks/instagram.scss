@@ -1,0 +1,20 @@
+.instagram {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include litle-desktop {
+    justify-content: flex-start;
+  }
+}
+
+.instagram__item {
+  width: 33%;
+  border-bottom: 1px solid $intro-color;
+
+  @include litle-desktop {
+    width: auto;
+    
+    border-right: 1px solid $intro-color;
+  }
+}

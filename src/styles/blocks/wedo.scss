@@ -1,0 +1,22 @@
+.wedo {
+  padding-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.wedo__item {
+  width: 50%;
+  padding: 0 15px;
+
+  @include tablets {
+    width: 100%;
+  }
+}
+
+.wedo__img {
+
+  @include tablets {
+    display: none;
+  }
+}

@@ -1,0 +1,28 @@
+.social__list {
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  width: 55px;
+  height: 55px;
+  padding: 12px 10px;
+  display: inline-block;
+  background-color: $hover-color;
+  border-right: 1px solid $pseudo-element-color;
+  
+  font-size: 30px;
+  color: $pseudo-element-color;
+  line-height: 1;
+
+  transition: background .1s linear, color .1s linear;
+
+  &:last-child {
+    border-right: none;
+  }
+
+  &:hover {
+    color: $intro-color;
+    background-color: $pseudo-element-color;
+  }
+}

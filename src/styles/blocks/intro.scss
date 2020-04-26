@@ -1,0 +1,72 @@
+.intro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  min-height: 820px;
+  background: url('./images/intro.jpg') center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  @include tablets {
+    min-height: 650px;
+  }
+}
+
+.intro__inner {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro__title {
+  color: $intro-color;
+  font-size: 150px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+
+  &:after {
+    content: "";
+    display: block;
+    margin: 50px auto;
+    width: 60px;
+    height: 3px;
+    background-color: $intro-color;
+  }
+
+  @include desktops {
+    font-size: 120px;
+  }
+
+  @include litle-desktop {
+    font-size: 80px;
+  }
+
+  @include tablets {
+    font-size: 40px;
+  }
+}
+
+.intro__suptitle {
+  margin-bottom: 15px;
+  color: $intro-color;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 72px;
+  font-weight: 400;
+
+  @include desktops {
+    font-size: 52px;
+  }
+
+  @include litle-desktop {
+    font-size: 32px;
+  }
+
+  @include phones {
+    font-size: 22px;
+  }
+}

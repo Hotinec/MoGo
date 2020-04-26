@@ -1,0 +1,67 @@
+.services {
+  padding-top: 30px;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include tablets {
+    justify-content: center;
+  }
+}
+
+.services__item {
+  width: 33.33333%;
+  padding: 0 35px 40px 85px;
+  position: relative;
+  margin-bottom: 40px;
+
+  &--border {
+    border-bottom: 1px solid $hr-color;
+  }
+
+  @include litle-desktop {
+    width: 50%;
+    max-width: 400px;
+    padding-bottom: 0;
+    
+    &--border {
+      border: 0;
+    }
+  }
+
+  @include tablets {
+    width: 100%;
+    padding-left: 55px;
+    padding-right: 0;
+  }
+}
+
+.services__icon {
+  fill: $about-background-color;
+  width: 32px;
+  height: 32px;
+
+  position: absolute;
+  top: 0;
+  left: 28px;
+  z-index: 1;
+
+  @include tablets {
+    left: 0;
+  }
+}
+
+.services__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.services__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: $sextion-color-text;
+}

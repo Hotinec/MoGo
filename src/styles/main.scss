@@ -1,0 +1,23 @@
+//colors
+$base-color: #333333;
+$intro-color: #ffffff;
+$hover-color:  #fce38a;
+$pseudo-element-color: #f38181;
+$sextion-color-text: #999999;
+$about-background-color: #95e1d3;
+$border-opacity: #b5eae0;
+$foter-btn-hover-color: #74c7b8;
+$hr-color: #e5e5e5;
+$arrow-color:  #cccccc;
+$commets-background-color: #f8f8f8;
+$input-border-color: #e7e7e7;
+$header-background-color: #eb8b8d;
+
+//breakpoints
+$desktops: 1230px;
+$litle-desktop: 990px;
+$tablets: 770px;
+$phones: 575px;
+
+@import "./layout/*.scss";
+@import "./blocks/*.scss";

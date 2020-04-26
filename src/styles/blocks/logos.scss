@@ -1,0 +1,27 @@
+.logos__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -15px;
+
+  @include phones {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.logos__item {
+  padding: 0 15px;
+
+  @include phones {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+.logos__image {
+
+  @include phones {
+    margin: 0 auto;
+  }
+}

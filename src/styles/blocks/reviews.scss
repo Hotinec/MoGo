@@ -1,0 +1,125 @@
+.reviews {
+  position: relative;
+
+}
+
+.reviewes__item {
+  padding-left: 255px;
+  position: relative;
+
+  min-height: 210px;
+
+  @include litle-desktop {
+    padding-left: 175px;
+  }
+
+  @include tablets {
+    padding-left: 0;
+  }
+}
+
+.reviwes__photo {
+  width: 210px;
+  height: 210px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  border: 2px solid $about-background-color;
+  border-radius: 50%;
+  overflow: hidden;
+
+  @include litle-desktop {
+    width: 150px;
+    height: 150px;
+  }
+
+  @include tablets {
+    position: static;
+    margin: 0 auto 20px;
+  }
+}
+
+.reviews__text {
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: $sextion-color-text;
+  margin-bottom: 15px;
+
+  @include desktops {
+    font-size: 20px;
+  }
+
+  @include tablets {
+    font-size: 16px;
+  }
+}
+
+.reviwes__athor {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Kaushan Script";
+
+  &:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 3px;
+    margin-right: 10px;
+
+    background-color: $pseudo-element-color;
+  }
+
+  @include tablets {
+    font-size: 20px;
+  }
+}
+
+.reviews .slick-slider {
+  padding: 0 110px;
+
+  @include litle-desktop {
+    padding: 0 60px ;
+  }
+
+  @include phones {
+    padding: 0;
+  }
+}
+
+.slick-arrow {
+  font-size: 0;
+  color: transparent;
+
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+
+  &:after {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+
+    border-top: 3px solid $arrow-color;
+    border-right: 3px solid $arrow-color;
+  }
+
+  @include phones {
+    top: 18%;
+  }
+}
+
+.slick-prev {
+  left: 0;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  right: 0;
+  transform: rotate(45deg);
+}

@@ -1,0 +1,46 @@
+.blogs__item {
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.blogs__img {
+  width: 120px;
+  height: 80px;
+
+  @include phones {
+    width: 80px;
+    height: 50px;
+  }
+}
+
+.blogs__content {
+  padding-left: 20px;
+}
+
+.blogs__title {
+  display: block;
+  margin-bottom: 5px;
+
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.5;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @include phones {
+    font-size: 10px;
+  }
+}
+
+.blogs__date {
+  color: $sextion-color-text;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: italic;
+}

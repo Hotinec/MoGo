@@ -1,0 +1,67 @@
+.statistics {
+  background-color: $about-background-color;
+}
+
+.statistics__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include litle-desktop {
+    justify-content: center;
+  }
+}
+
+.statistics__item {
+  flex: 1 1 0;
+  padding: 70px 25px;
+
+  border-left: 1px solid $border-opacity;
+
+  text-align: center;
+  color: $intro-color;
+
+  &:last-child {
+    border-right: 1px solid $border-opacity;
+  }
+
+  @include litle-desktop {
+    flex: none;
+    width: 33.33333%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    border: 0;
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  @include phones {
+    width: 100%;
+
+    border-bottom: 1px solid $border-opacity;
+  
+    &:last-child {
+      border: 0;
+    }
+  }
+}
+
+.statistics__count {
+  font-size: 72px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 10px;
+
+  @include phones {
+    font-size: 52px;
+  }
+}
+
+.statistics__text {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
